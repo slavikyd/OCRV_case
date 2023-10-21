@@ -3,8 +3,8 @@ db = 'hackathon_sirius_data.csv'
 df = pd.read_csv(db)
 
 def simple_allocation(df) -> list:
-    tonnage_limit = df[df.columns[5]].values.tolist()
-    max_train_tonnage = df[df.columns[6]].values.tolist()
+    tonnage_limit = df[df.columns[6]].values.tolist()
+    max_train_tonnage = df[df.columns[7]].values.tolist()
 
 
 
@@ -22,6 +22,7 @@ def simple_allocation(df) -> list:
                 print(f'pair is {lst[i]} {lst[j]}')
                 temp = min(tonnage_limit[i] / max_train_tonnage[i], tonnage_limit[j] / max_train_tonnage[j])
                 output.append(int(temp))
-    return output
+    output = output[:(int(len(output) / 2)+1)]
+    return output, len(output)
 
 print(simple_allocation(df))
