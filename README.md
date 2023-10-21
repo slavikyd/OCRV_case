@@ -1,6 +1,8 @@
 # OCRV_case
 GaRmOn1a team solution for Sirius College Hackathon 2.0
 
+- [Презентация](./pres.pdf)
+
 - [Код базового решения](./base.py)
 - [Код отрисовки графа](./graph.py)
 - [Код среднего решения](./new.ipynb)
