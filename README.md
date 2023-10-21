@@ -30,3 +30,28 @@ Python + Django, Matplotlib, Numpy + Pandas
 - [Усачева Ульяна](github.com/UsachovaUlyana)
 - [Пономарева Алина](github.com/alyaa17)
 - [Демьяненко Вячеслав](github.com/slavikyd)
+
+
+## Запуск кода
+Для запуска кода необходимо склонировать репозиторий 
+```bash
+git clone https://github.com/slavikyd/OCRV_case
+```
+
+После этого нужно войти в репозиторий 
+```bash
+cd OCRV_case
+```
+и прописать команду 
+```bash
+python base.py
+```
+Если вы на системе под управдением Windows
+
+или 
+```bash
+python3 base.py
+```
+Если вы на системе под управлением Linux
+
+Для запуска второй версии кода (улучшенной до соответствий критериям задачи средней сложности) необходимо открыть final.ipynb в Jupiter notebook или VScode
