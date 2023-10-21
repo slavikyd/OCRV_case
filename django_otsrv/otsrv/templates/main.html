@@ -53,10 +53,13 @@
         </div>
         <div class="container__window">
             <div class="container__window_install">
-                <button class="btn">
-                    <img class="btn__icon" src="{% static 'img/install.png' %}" alt="">
-                    <p class="btn__text">Загрузить данные</p>
-                </button>
+                <div class="input__wrapper">
+                    <input name="file" type="file" id="input__file" class="input input__file" multiple>
+                    <label for="input__file" class="input__file-button">
+                    <span class="input__file-icon-wrapper"><img class="input__file-icon" src="{% static 'img/install.png' %}" alt="Выбрать файл" width="25"></span>
+                    <span class="input__file-button-text">Выберите файл</span>
+                    </label>
+                </div>
             </div>
         </div>
     </div>
